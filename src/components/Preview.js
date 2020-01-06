@@ -5,7 +5,11 @@ class Preview extends React.Component {
         return (
             <div className="preview">
                 <p>PREVIEW</p>
-                <img src={this.props.data} alt="whatever"></img>
+                <img
+                    src={this.props.data.selected}
+                    alt={this.props.data.title}
+                    title={this.props.data.title}
+                ></img>
             </div>
         );
     }
